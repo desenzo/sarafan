@@ -1,0 +1,142 @@
+:root {
+  --border-color: #6f6f6f;
+  --text-color: #2d2d2d;
+  --white-color: #fff;
+  --z-header: 2;
+  --z-slider: 1;
+}
+
+.banner {
+  height: 954px;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 86px;
+  z-index: var(--z-header);
+}
+
+.header-navigation-list {
+  display: flex;
+  gap: 44px;
+}
+
+.header-navigation-list__item > a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: var(--text-color);
+}
+
+.icons {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+  justify-content: center;
+}
+.icons svg {
+  cursor: pointer;
+}
+
+.search-wraper {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+  gap: 5px;
+  padding: 0 5px 5px;
+}
+
+.search {
+  outline: none;
+  background: transparent;
+}
+
+.search-icon {
+  cursor: pointer;
+}
+
+.slider {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: var(--z-slider);
+}
+
+.slider-list {
+  height: 100%;
+}
+.slider-item {
+  height: 100%;
+  width: 100%;
+  background-image: url(/assets/images/IndexBackgroung.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.slider-items__text-blocks {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 215px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  color: var(--white-color);
+}
+
+.slider-items__text-blocks h3 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+}
+
+.slider-items__text-blocks h2 {
+  font-size: 63px;
+  font-weight: 500;
+  line-height: 72px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.slider-button {
+  height: 56px;
+  width: 300px;
+  color: var(--text-color);
+  background-color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: var(--z-slider);
+}
+
+.prev-arrow {
+  left: 78px;
+}
+
+.next-arrow {
+  right: 78px;
+  transform: translateY(-50%) rotate(180deg);
+}
