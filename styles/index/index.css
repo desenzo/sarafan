@@ -4,6 +4,8 @@
   --white-color: #fff;
   --z-header: 2;
   --z-slider: 1;
+  --bullet-default-color: #e5e5e575;
+  --bullet-active-color: #dcdbdb;
 }
 
 .banner {
@@ -139,4 +141,32 @@
 .next-arrow {
   right: 78px;
   transform: translateY(-50%) rotate(180deg);
+}
+
+.bullets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 81px;
+}
+
+.bullet-item {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--bullet-default-color);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.bullet-item:hover {
+  background-color: var(--bullet-active-color);
+}
+
+.bullet-item.bullet-item__active {
+  background-color: var(--bullet-active-color);
 }
