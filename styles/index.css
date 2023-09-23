@@ -330,6 +330,9 @@
   .navigation-list {
     gap: 11px;
   }
+  .new-collection__upper-list {
+    gap: 25px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -358,6 +361,9 @@
   }
   .new-collection {
     margin-top: 80px;
+  }
+  .new-collection__upper-list {
+    gap: 20px;
   }
 }
 
@@ -410,6 +416,9 @@
   .new-collection {
     margin-top: 50px;
   }
+  .new-collection__upper-list {
+    gap: 15px;
+  }
   .new-collection-header > h3 {
     margin-left: 30px;
     font-size: 18px;
@@ -417,6 +426,9 @@
     line-height: 21px;
     letter-spacing: 0.03em;
     text-align: left;
+  }
+  .show-all {
+    margin-right: 30px;
   }
   .show-all > h3 {
     font-size: 12px;
@@ -436,6 +448,7 @@
   }
   .upper-item {
     width: 222px;
+    height: 336px;
   }
   .upper-item__image {
     height: 290;
