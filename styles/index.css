@@ -425,6 +425,11 @@
     letter-spacing: 0em;
     text-align: left;
   }
+  .show-all-arrow {
+    height: 9px;
+    width: 9px;
+    cursor: pointer;
+  }
   .new-collection__list {
     height: 336px;
     margin-top: 15px;
