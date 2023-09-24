@@ -92,7 +92,7 @@
   height: 100%;
 }
 .slider-item {
-  background-image: url(/assets/images/bg.png);
+  background-image: url(../assets/images/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -299,7 +299,7 @@
 }
 
 .new-collection__add-to-favourite {
-  background-image: url(/assets/icons/AddToFavoritesHeart.svg);
+  background-image: url(../assets/icons/AddToFavoritesHeart.svg);
   position: absolute;
   top: 12px;
   right: 12px;
@@ -400,8 +400,9 @@
   padding-bottom: 30px;
 }
 .footer-container {
+  max-width: 1200px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 41px;
   width: 100%;
 }
@@ -538,7 +539,7 @@
   }
 
   .slider-item {
-    background-image: url(/assets/images/slider-mobile.png);
+    background-image: url(../assets/images/slider-mobile.png);
     display: flex;
     justify-content: center;
     align-items: center;
