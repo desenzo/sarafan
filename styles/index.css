@@ -389,6 +389,8 @@
   gap: 93px;
   justify-content: center;
   align-items: center;
+  /* убрать и добавить адаптив под мобилу */
+  overflow: hidden;
 }
 .footer > h3 {
   font-size: 14px;
