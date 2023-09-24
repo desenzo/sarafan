@@ -401,8 +401,9 @@
 }
 .footer-container {
   display: flex;
-  gap: 256px;
+  justify-content: space-around;
   margin-top: 41px;
+  width: 100%;
 }
 .footer-links {
   margin-top: 29px;
@@ -471,9 +472,6 @@
     margin-top: 100px;
     overflow: hidden;
   }
-  .footer-container {
-    gap: 200px;
-  }
   .footer-links {
     gap: 100px;
   }
@@ -488,9 +486,6 @@
   }
   .new-collection__upper-list {
     gap: 25px;
-  }
-  .footer-container {
-    gap: 150px;
   }
   .footer-links {
     gap: 80px;
@@ -578,8 +573,7 @@
     width: 10px;
     height: 10px;
   }
-  .new-collection,
-  hurry-up-to-buy-collection {
+  .new-collection {
     margin-top: 50px;
   }
   .new-collection__upper-list {
@@ -617,7 +611,7 @@
     height: 336px;
   }
   .upper-item__image {
-    height: 290;
+    height: 290px;
   }
   .newcollection-item__name {
     margin-top: 15px;
