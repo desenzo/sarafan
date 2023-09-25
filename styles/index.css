@@ -453,7 +453,10 @@
   height: 118px;
   width: 141px;
 }
-
+.mobile-footer {
+  display: none;
+  padding: 50px 0;
+}
 @media screen and (max-width: 1250px) {
   .header {
     gap: 43px;
@@ -531,7 +534,7 @@
 
 @media (max-width: 768px) {
   .mobile-hiden {
-    display: non;
+    display: none;
   }
   .banner {
     padding-top: 61px;
@@ -682,5 +685,79 @@
   .about-description-mobile > a {
     color: var(--border-color);
     text-decoration: underline;
+  }
+  .footer {
+    display: none;
+  }
+  .mobile-footer {
+    position: relative;
+    margin-top: 50px;
+    border-top: 1px solid var(--border-color-footer);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-help {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+  }
+  .footer-button-open-help,
+  .footer-button-open-company {
+    display: flex;
+    gap: 8px;
+  }
+  .footer-button-open-help,
+  .footer-button-open-company > p {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: var(--text-color);
+  }
+  .footer-about-us {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-about-us > a {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--text-color);
+  }
+  .footer-social-links {
+    display: flex;
+    gap: 20px;
+  }
+  .footer-social-links > a {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--text-color);
+  }
+
+  .mobile-footer > p {
+    color: var(--border-color-footer);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .footer-help-arroy {
+    transform: rotate(90deg);
+  }
+  .footer-company-arroy {
+    transform: rotate(270deg);
   }
 }
