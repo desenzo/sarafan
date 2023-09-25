@@ -114,14 +114,14 @@
   color: var(--white-color);
 }
 
-.slider-items__text-blocks h3 {
+.slider-lower-text {
   font-size: 25px;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0.03em;
 }
 
-.slider-items__text-blocks h2 {
+.slider-upper-text {
   font-size: 63px;
   font-weight: 500;
   line-height: 72px;
@@ -228,6 +228,7 @@
   font-weight: 400;
   line-height: 14px;
   letter-spacing: 0em;
+  color: var(--text-color);
 }
 
 .new-collection__list {
@@ -299,7 +300,6 @@
 }
 
 .new-collection__add-to-favourite {
-  background-image: url(../assets/icons/AddToFavoritesHeart.svg);
   position: absolute;
   top: 12px;
   right: 12px;
@@ -308,17 +308,17 @@
   height: 26px;
 }
 
-.show-all {
+.show-all > a {
   position: absolute;
   right: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .show-all-arrow {
   height: 20px;
   width: 20px;
-  cursor: pointer;
 }
 
 .about {
@@ -349,14 +349,14 @@
   letter-spacing: 0.03em;
   text-align: left;
 }
-.about-description > h3 {
+.about-description > p {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
 }
-.about-description > h3[href] {
+.about-description > a {
   color: var(--border-color);
   text-decoration: underline;
 }
@@ -392,7 +392,7 @@
   /* убрать и добавить адаптив под мобилу */
   overflow: hidden;
 }
-.footer > h3 {
+.footer > p {
   font-size: 14px;
   font-weight: 400;
   line-height: 15px;
@@ -433,8 +433,9 @@
   text-align: left;
   color: var(--text-color);
 }
-.footer-links-item {
+.footer-links-item > a {
   font-family: Montserrat;
+  color: var(--text-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 29px;
@@ -443,7 +444,7 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-.footer-links-item:hover {
+.footer-links-item > a:hover {
   color: var(--text-color-footer-lower);
   text-decoration: underline;
 }
@@ -554,14 +555,14 @@
     transform: translateY(0);
   }
 
-  .slider-items__text-blocks h3 {
+  .slider-lower-text {
     color: var(--text-color);
     font-size: 20px;
     font-weight: 400;
     line-height: 23px;
   }
 
-  .slider-items__text-blocks h2 {
+  .slider-upper-text {
     color: var(--text-color);
     font-size: 43px;
     font-weight: 500;
@@ -584,22 +585,21 @@
     gap: 15px;
   }
   .new-collection-header > h3 {
-    margin-left: 30px;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0.03em;
     text-align: left;
   }
-  .show-all {
-    margin-right: 30px;
-  }
-  .show-all > h3 {
+  .show-all-span {
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0em;
     text-align: left;
+  }
+  .show-all-span:hover {
+    color: var(--text-color-footer-lower);
   }
   .show-all-arrow {
     height: 9px;
@@ -672,14 +672,14 @@
     margin: 0 20px;
     padding-top: 25px;
   }
-  .about-description-mobile > h3 {
+  .about-description-mobile > p {
     font-size: 11px;
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0em;
     text-align: left;
   }
-  .about-description-mobile > h3[href] {
+  .about-description-mobile > a {
     color: var(--border-color);
     text-decoration: underline;
   }
