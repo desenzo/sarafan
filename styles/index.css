@@ -374,10 +374,10 @@
 }
 .hurry-up-to-buy-collection {
   overflow: hidden;
+  width: 1170px;
 }
 .hurry-up-to-buy-collection__list {
   margin-top: 30px;
-  width: 1170px;
 }
 
 .footer {
@@ -464,11 +464,14 @@
   .header-navigation-list {
     gap: 22px;
   }
-  .new-collection__list,
-  .hurry-up-to-buy-collectio__list {
+  .new-collection__list {
     height: 416px;
     width: 2646px;
   }
+  .hurry-up-to-buy-collection {
+    width: 2646px;
+  }
+
   .new-collection__lower-list,
   .hurry-up-to-buy-arrow {
     display: none;
