@@ -71,6 +71,12 @@
   gap: 5px;
   padding: 0 5px 5px;
 }
+.favorites-icon:hover,
+.login-icon:hover,
+.cart-icon:hover {
+  transition: all 0.2s ease-in-out;
+  fill: var(--text-color-footer-lower);
+}
 
 .search {
   outline: none;
@@ -151,6 +157,10 @@
   z-index: var(--z-slider);
   margin: 0 0;
 }
+.hurry-up-to-buy-arrow:hover {
+  transition: all 0.2s ease-in-out;
+  fill: var(--text-color-footer-lower);
+}
 
 .hurry-up-to-buy-prev-arrow {
   left: -55px;
@@ -168,7 +178,10 @@
   z-index: var(--z-slider);
   margin: 0 0;
 }
-
+.slider-arrow:hover {
+  transition: all 0.2s ease-in-out;
+  fill: var(--text-color-footer-lower);
+}
 .prev-arrow {
   left: 78px;
 }
@@ -302,12 +315,15 @@
 .new-collection__add-to-favourite {
   position: absolute;
   top: 12px;
-  right: 12px;
+  right: 20px;
   cursor: pointer;
   width: 26px;
   height: 26px;
 }
-
+.new-collection__add-to-favourite svg:hover {
+  transition: all 0.2s ease-in-out;
+  fill: var(--text-color-footer-lower);
+}
 .show-all > a {
   position: absolute;
   right: 20px;
