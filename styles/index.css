@@ -385,11 +385,11 @@
   display: none;
 }
 .new-collection-header__section {
+  overflow: hidden;
   position: relative;
   margin-top: 120px;
 }
 .hurry-up-to-buy-collection {
-  overflow: hidden;
   width: 1170px;
 }
 .hurry-up-to-buy-collection__list {
@@ -543,9 +543,6 @@
   .icons {
     gap: 7px;
   }
-  .hurry-up-to-buy-collection {
-    margin-top: 80px;
-  }
   .new-collection__upper-list {
     gap: 20px;
   }
@@ -600,8 +597,12 @@
     width: 10px;
     height: 10px;
   }
-  .new-collection {
+  .new-collection,
+  .new-collection-header__section {
     margin-top: 50px;
+  }
+  .hurry-up-to-buy-collection__list {
+    margin-top: 15px;
   }
   .new-collection__upper-list {
     gap: 15px;
